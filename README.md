@@ -19,7 +19,7 @@ All the **information about weather** is getting sent from [Weather API](https:/
 To open the project you need to have at least [React](https://reactjs.org/) installed.
 
 Here are some steps to run the project:
-1. Download the files, unpack them and open a folder in your IDE (e.g. Visual Studio).
+1. Download the files, unpack them and open a folder in your IDE (e.g. Visual Studio Code).
 2. Open the terminal and put there the next line:
 `npm start`
 3. Your browser will open the project under the address **localhost:3000**.
