@@ -1,38 +1,119 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff
+}
+
+html{
+  font-family: Roboto, sans-serif;
+}
+
+.searchbar{
+  margin-left: 70%;
+  padding-top: 50px;
+}
+
+.searchbox{
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.searchtext{
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  color: black;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.weather {
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weather__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.current {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.city {
+  font-size: 3em;
+}
+
+.description {
+  font-size: 1.5em;
+}
+
+.temperature {
+  font-size: 4em;
+}
+
+.details {
+  font-size: 1.5em;
+}
+
+html[data-theme="day"] .weather,
+.weather {
+  background: -webkit-gradient(linear, left bottom, left top, from(#3594bf), to(rgba(255, 255, 255, 0))), #53a6cb;
+  background: linear-gradient(360deg, #3594bf 0%, rgba(255, 255, 255, 0) 100%), #53a6cb;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .search-form input {
+    width: 70%;
   }
-  to {
-    transform: rotate(360deg);
+  .search-form button {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .search-form input {
+    width: 70%;
+  }
+  .search-form button {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 768px){
+  .search-form input {
+    width: 80%;
+  }
+  .search-form button {
+    width: 18%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .search-form input {
+    width: 80%;
+  }
+  .search-form button {
+    width: 18%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .search-form input {
+      width: 90%;
+  }
+  .search-form button {
+    width: 8%;
   }
 }
